@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+.home {
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    margin-left: -10px;
+
+    a {
+      font-size: 1.2rem;
+      // background-color: red;
+      padding: 1rem;
+      width: 105%;
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        background-color: rgb(92, 164, 226);
+        border-radius: 6px;
+      }
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.table {
+  .mantine-Group-root.mantine-106vqgs {
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .mantine-Group-root.mantine-106vqgs:hover {
+    opacity: 1;
+  }
+
+  .mantine-106vqgs {
+    justify-content: end;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.form {
+  &__control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .form__input-serial {
+    position: relative;
+  }
+  .form__input-name {
+    position: relative;
+  }
+
+  &__error-message {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji';
+    -webkit-webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    word-break: break-word;
+    color: rgb(250, 82, 82);
+    font-size: calc(0.75rem);
+    line-height: 1.2;
+    display: block;
+
+    &.serial {
+      position: absolute;
+      top: 7.3rem;
+    }
+    &.name {
+      position: absolute;
+      right: 8.3rem;
+      top: 7.3rem;
+    }
+  }
+}
+
+.delete {
+  text-align: center;
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+Footer {
+  text-align: center;
+}
