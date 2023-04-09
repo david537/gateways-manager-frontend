@@ -7,7 +7,7 @@
 
 # Gateway Manager Client
 
-This sample beta client project is managing gateways - master devices that control multiple peripheral devices. 
+This is a sample beta client project to managing gateways - master devices that control multiple peripheral devices. 
 
 ## Installation
 
